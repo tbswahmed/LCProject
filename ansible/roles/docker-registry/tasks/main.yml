@@ -8,5 +8,6 @@
 - name: docker push
   docker_image:
     name: devops:latest
+    repository: tybahmed/projetcl
     push: yes
     source: local    
