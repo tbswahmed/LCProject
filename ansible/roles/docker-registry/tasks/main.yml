@@ -7,6 +7,6 @@
     password: "Cloudcomputing"
 - name: docker push
   docker_image:
-    name:devops:latest
+    name: devops:latest
     push: yes
     source: local    
