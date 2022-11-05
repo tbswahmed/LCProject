@@ -23,7 +23,7 @@ pipeline {
           }
        }
     }
-    stage('Docker Build img') {
+    stage('pushing to DokcerHub') {
       steps {
         script {
            sh 'ansible-playbook ansible/docker-registry.yml -i ansible/inventory/hosts.yml'
