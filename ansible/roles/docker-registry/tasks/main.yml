@@ -2,9 +2,9 @@
 # tasks file for docker-registry
 - name: login
   docker_login:
-    email: tayeb.ahmed@esprit.tn
-    username: tybahmed
-    password: Cloudcomputing
+    #email: "tayeb.ahmed@esprit.tn"
+    username: "tybahmed"
+    password: "Cloudcomputing"
     reauthorize: yes
 - name: docker push
   docker_image:
