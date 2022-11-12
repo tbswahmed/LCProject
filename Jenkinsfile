@@ -30,5 +30,13 @@ pipeline {
           }
        }
     }
+    tage('pushing to DokcerHub') {
+      steps {
+        script {
+           sh 'ansible-playbook ansible/docker-compose.yml -i ansible/inventory/hosts.yml'
+          }
+       }
+    }
+    sh "ansible-playbook Ansible/docker-comp.yml -i Ansible/inventory/host.yml"
   }
 }
