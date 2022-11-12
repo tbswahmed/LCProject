@@ -30,7 +30,7 @@ pipeline {
           }
        }
     }
-    tage('Monitoring') {
+    stage('Monitoring') {
       steps {
         script {
            sh 'ansible-playbook ansible/docker-compose.yml -i ansible/inventory/hosts.yml'
