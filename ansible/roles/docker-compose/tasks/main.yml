@@ -1,0 +1,7 @@
+---
+# tasks file for docker-compose
+- name: starting docker-compose
+  docker_compose:
+    project_src: ~/LCProject
+    state: present
+    
