@@ -37,6 +37,5 @@ pipeline {
           }
        }
     }
-    sh "ansible-playbook Ansible/docker-comp.yml -i Ansible/inventory/host.yml"
   }
 }
